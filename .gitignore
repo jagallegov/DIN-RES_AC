@@ -1,0 +1,18 @@
+# Secretos y configuración local
+.env
+
+# Datos institucionales y salidas del ETL
+reportes/
+salida/
+
+# Dependencias y entornos
+backend/.venv/
+frontend/node_modules/
+
+# Compilados
+frontend/dist/
+__pycache__/
+*.pyc
+
+# Sistema
+.DS_Store

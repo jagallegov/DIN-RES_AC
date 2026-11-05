@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es" data-bs-theme="light">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cupos ofertados, inscripciones, cancelaciones y calificaciones de las asignaturas de la Universidad Nacional de Colombia.">
+  <title>Oferta y resultados de asignaturas | UNAL</title>
+  <link rel="icon" type="image/x-icon" href="https://gestionapp.unal.edu.co/cdn/assets/favicon.ico">
+  <link rel="stylesheet" href="https://gestionapp.unal.edu.co/cdn/kitUnal/12112024/css/kitUnal.min.css">
+  <link rel="stylesheet" href="https://gestionapp.unal.edu.co/cdn/kitUnal/12112024/css/themes/main.min.css">
+  <script>
+    document.documentElement.classList.toggle('sin-kit', !getComputedStyle(document.documentElement).getPropertyValue('--bs-primary').trim());
+    document.documentElement.classList.toggle('sin-servidor', location.protocol === 'file:');
+  </script>
+  <script src="https://gestionapp.unal.edu.co/cdn/kitUnal/12112024/js/kitUnal.bundle.min.js" defer></script>
+</head>
+
+<body class="body">
+  <a class="salto" href="#contenido">Ir al contenido principal</a>
+
+  <header class="m-0">
+    <div class="section-icon">
+      <div class="banner-container">
+        <a href="https://unal.edu.co/" target="_blank" rel="noopener" class="icon-link">
+          <img src="https://gestionapp.unal.edu.co/cdn/assets/images/logo_unal_circle.png"
+            alt="Escudo de la Universidad Nacional de Colombia">
+        </a>
+      </div>
+    </div>
+    <div id="divider-top"></div>
+    <div id="section-menu-middle">
+      <div class="padded-container">
+        <p id="name-aplication">Oferta y resultados de asignaturas | Universidad Nacional de Colombia</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="body tablero" id="contenido" tabindex="-1">
+    <p id="estado-conexion" class="estado-conexion" role="status"></p>
+    <div id="raiz" data-estado="cargando">
+      <p class="estado estado-carga" role="status">Cargando datos</p>
+      <div class="aviso-error aviso-servidor">
+        <h2>El tablero no puede abrirse como archivo local.</h2>
+        <p>El tablero toma los datos del servicio del proyecto. Desde la carpeta backend el servicio se inicia con
+          <code>python -m tablero.api</code> y el tablero queda en la dirección <code>localhost:8000</code>.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p class="copyright">© 2026 Universidad Nacional de Colombia</p>
+    <div class="info-help">
+      <p class="dependency">Dirección Nacional de Información Académica, Registro y Matrícula</p>
+      <div class="vr"></div>
+      <a class="help-link" href="https://gestionservicios.unal.edu.co/asmscustomer/index.html#/" target="_blank"
+        rel="noopener">
+        <span class="material-symbols-outlined icon" aria-hidden="true">contact_support</span>
+        <span class="text-decoration-underline">Mesa de ayuda</span>
+      </a>
+    </div>
+    <div class="more-info">
+      <p><a class="link-neutral-100" href="https://unal.edu.co/proteccion-de-datos-personales" target="_blank"
+          rel="noopener">Tratamiento de datos personales</a></p>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>
